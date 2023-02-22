@@ -43,6 +43,9 @@ const AddUser = (props)=>{
     const errorHandler =()=>{
         setError(null);
     }
+    const cnameChangeHandler=(e)=>{
+        console.log(e.target.value)
+    }
 
 
 
@@ -54,6 +57,8 @@ const AddUser = (props)=>{
                 <input type ='text' id='name' value={name} onChange={nameChangeHandler}></input>
                 <label htmlFor='age'>AGE</label>
                 <input type='number' id='age' value={age} onChange={ageChangeHandler}/>
+                <label htmlFor='cname'>COLLEGE NAME</label>
+                <input type ='text' id='cname'   onChange={cnameChangeHandler}></input>
                 <button type ='submit' >ADD USER</button>
             </form>
             
